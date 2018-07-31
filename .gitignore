@@ -1,0 +1,4 @@
+resume.json
+*.pdf
+node_modules/*
+public/index.html

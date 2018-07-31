@@ -1,0 +1,59 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#sidepanel {
+    height: 100%;
+    width: 33%;
+    position: fixed;
+    background-color: #373737;
+    color: white;
+}
+
+#sidepanel .info{
+    padding-left: 5px; /*Move the info right 5 px*/
+}
+
+#sidepanel .header{
+    background-color: #282828;
+    padding-left: 5px; /*Move the headers right 5 px*/
+}
+
+#content {
+    width: 66%;
+    padding: 10px 0px; /*Move the right panel down by 10 px*/
+    float: right;
+}
+.item{
+    clear: both;
+}
+.date{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.college{
+    float: right;
+    width: 80%;
+}
+
+#work{
+    display: inline-block;
+}
+
+.institution{
+    font-weight: bold;
+}
+
+.data{
+    float: right;
+    width: 80%;
+}
+
+.position h2{
+    margin: 0;
+}
+
+.cmpny{
+    margin: 0;
+}
