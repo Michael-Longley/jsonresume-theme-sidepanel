@@ -20,7 +20,7 @@ body{
 }
 
 #content {
-    width: 66%;
+    width: 65%;
     padding: 10px 0px; /*Move the right panel down by 10 px*/
     float: right;
 }
