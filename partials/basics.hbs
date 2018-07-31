@@ -42,11 +42,17 @@
                         {{network}}
                     </strong>
                     {{/if}} {{#if username}}
+                    {{#if url}}
+                    <a href={{url}}>
+                    {{/if}}
                     <div class="username">
                         {{username}}
                         </br>
                         </br>
                     </div>
+                    {{#if url}}
+                    </a>
+                    {{/if}}
                     {{/if}}
                 </div>
                 {{/each}}
