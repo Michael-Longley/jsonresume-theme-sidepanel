@@ -1,14 +1,14 @@
 {
-    "name": "jsonresume-theme-sidepanel",
-    "version": "0.0.1",
-    "description": "Side panel theme for JSON Resume",
-    "author": "Michael-Longley",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Michael-Longley/jsonresume-theme-sidepanel.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "handlebars": "^2.0.0-alpha.4"
-    }
+  "name": "jsonresume-theme-sidepanel",
+  "version": "0.1.0",
+  "description": "Side panel theme for JSON Resume",
+  "author": "Michael-Longley",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Michael-Longley/jsonresume-theme-sidepanel.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
 }
