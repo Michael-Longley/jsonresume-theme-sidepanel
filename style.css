@@ -32,6 +32,9 @@ body{
     height: 100%;
     width: 20%;
 }
+#work .item .date{
+    padding-top: 5px;
+}
 .college{
     float: right;
     width: 80%;
