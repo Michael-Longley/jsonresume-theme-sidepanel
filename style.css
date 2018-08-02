@@ -53,9 +53,7 @@ body{
     width: 80%;
 }
 
-.position h2{
-    margin: 0;
-}
+
 
 .cmpny{
     margin: 0;
@@ -63,4 +61,14 @@ body{
 
 a{
     color: white;
+}content h2{
+    margin: 10px 0px 10px 0px;
+}
+
+.summary p{
+    margin: 10px 0px 10px 0px;
+}
+
+#content .position h2{
+    margin: 0;
 }
