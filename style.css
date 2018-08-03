@@ -4,7 +4,7 @@ body{
 
 #sidepanel {
     height: 100%;
-    width: 33%;
+    width: 25%;
     position: fixed;
     background-color: #373737;
     color: white;
@@ -20,7 +20,7 @@ body{
 }
 
 #content {
-    width: 65%;
+    width: 74%;
     padding: 10px 0px; /*Move the right panel down by 10 px*/
     float: right;
 }
