@@ -26,6 +26,7 @@ body{
 }
 .item{
     clear: both;
+    font-size: 15px
 }
 .date{
     float: left;
@@ -68,6 +69,10 @@ h2{
 
 .summary p{
     margin: 10px 0px 10px 0px;
+}
+
+#content h2{
+    font-size: 20px
 }
 
 #content .position h2{
