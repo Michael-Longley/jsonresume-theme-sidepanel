@@ -20,6 +20,21 @@
                 Present
             </span>
             {{/if}}
+            {{#if startDate2}}
+            </br>
+            <span class="startDate">
+                {{startDate2}} -
+            </span>
+            {{/if}}
+            <br/> {{#if endDate2}}
+            <span class="endDate">
+                {{endDate2}}
+            </span>
+            {{else}}
+            <span class="endDate">
+                Present
+            </span>
+            {{/if}}
         </div>
         <div class="data">
             {{#if position}}
@@ -31,8 +46,16 @@
             {{/if}} {{#if company}}
             <h3 class="cmpny">
                 {{company}}
+                {{#if tools}}
+                    <tools>
+                        {{#each tools}}
+                            <t>{{.}}</t>
+                        {{/each}}
+                    </tools>
+                {{/if}}
             </h3>
             {{/if}}
+            
             {{#if summary}}
             <div class="summary">
                 <p>{{summary}}</p>
@@ -40,7 +63,8 @@
             {{/if}} {{#if highlights.length}}
             <ul class="highlights">
                 {{#each highlights}}
-                <p>{{.}}</p>
+                <p><highlightHead>{{title}}</highlightHead>
+                {{desc}}</p>
                 {{/each}}
             </ul>
             {{/if}}

@@ -81,3 +81,26 @@ h2{
 #content ul{
     padding-left: 0%;
 }
+
+t{
+    color: gray;
+    font-size: smaller
+}
+
+highlightHead{
+    font-weight: bold;
+}
+
+p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#Projects .project .name{
+    margin-bottom: 0%;
+}
+
+#Projects .project .summary p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
