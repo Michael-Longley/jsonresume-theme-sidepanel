@@ -1,75 +1,79 @@
 {{#if resume.work.length}}
-<section id="work">
-    <hr/>
-    <h2>Experience</h2>
-    <hr/>
-    {{#each resume.work}}
-    <div class="item">
-        <div class="date">
-            {{#if startDate}}
-            <span class="startDate">
-                {{startDate}} -
-            </span>
-            {{/if}}
-            <br/> {{#if endDate}}
-            <span class="endDate">
-                {{endDate}}
-            </span>
-            {{else}}
-            <span class="endDate">
-                Present
-            </span>
-            {{/if}}
-            {{#if startDate2}}
-            </br>
-            <span class="startDate">
-                {{startDate2}} -
-            </span>
-            {{/if}}
-            <br/> {{#if endDate2}}
-            <span class="endDate">
-                {{endDate2}}
-            </span>
-            {{else}}
-            <span class="endDate">
-                Present
-            </span>
-            {{/if}}
-        </div>
-        <div class="data">
-            {{#if position}}
-            <div class="position">
-                <h2>
-                    {{position}}
-                </h2>
+    <section id="work">
+        <hr/>
+        <h2>Experience</h2>
+        <hr/>
+        {{#each resume.work}}
+            <div class="item">
+                <div class="date">
+                    {{#if startDate}}
+                        <span class="startDate">
+                            {{startDate}} -
+                        </span>
+                        <br/> 
+                        {{#if endDate}}
+                            <span class="endDate">
+                                {{endDate}}
+                            </span>
+                        {{else}}
+                            <span class="endDate">
+                                Present
+                            </span>
+                        {{/if}}
+                    {{/if}}
+                    {{#if startDate2}}
+                        </br>
+                        <span class="startDate">
+                            {{startDate2}} -
+                        </span>
+                        <br/> 
+                        {{#if endDate2}}
+                            <span class="endDate">
+                        {{endDate2}}
+                        </span>
+                        {{else}}
+                            <span class="endDate">
+                                Present
+                            </span>
+                        {{/if}}
+                    {{/if}}
+                    
+                </div>
+                <div class="data">
+                    {{#if position}}
+                        <div class="position">
+                            <h2>
+                                {{position}}
+                            </h2>
+                        </div>
+                    {{/if}} 
+                    {{#if company}}
+                        <h3 class="cmpny">
+                            {{company}}
+                            {{#if tools}}
+                                <tools>
+                                    {{#each tools}}
+                                        <t>{{.}}</t>
+                                    {{/each}}
+                                </tools>
+                            {{/if}}
+                        </h3>
+                    {{/if}}
+                    {{#if summary}}
+                        <div class="summary">
+                            <p>{{summary}}</p>
+                        </div>
+                    {{/if}} 
+                    {{#if highlights.length}}
+                        <ul class="highlights">
+                            {{#each highlights}}
+                                <p><highlightHead>{{title}}</highlightHead>
+                                {{desc}}</p>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
             </div>
-            {{/if}} {{#if company}}
-            <h3 class="cmpny">
-                {{company}}
-                {{#if tools}}
-                    <tools>
-                        {{#each tools}}
-                            <t>{{.}}</t>
-                        {{/each}}
-                    </tools>
-                {{/if}}
-            </h3>
-            {{/if}}
-            
-            {{#if summary}}
-            <div class="summary">
-                <p>{{summary}}</p>
-            </div>
-            {{/if}} {{#if highlights.length}}
-            <ul class="highlights">
-                {{#each highlights}}
-                <p><highlightHead>{{title}}</highlightHead>
-                {{desc}}</p>
-                {{/each}}
-            </ul>
-            {{/if}}
-        </div>
-    </div>
-    {{/each}}
-</section>
+        {{/each}}
+    </section>
 {{/if}}

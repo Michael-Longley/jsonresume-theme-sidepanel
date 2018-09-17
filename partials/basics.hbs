@@ -1,64 +1,68 @@
 {{#resume.basics}}
-<div class="info">
-    <h1>{{name}}</h1>
-    <h2>{{label}}</h2>
-</div>
-<section id="basics">
-    <div class="contact">
-        <div class="header">
-            <h2>Personal Info</h2>
-        </div>
-        <div class="info">
-            {{#if website}}
-            <div class="website">
-                <strong>Website</strong>
-                </br>
-                {{website}}
-                </br>
-                </br>
+    <div class="info">
+        <h1>{{name}}</h1>
+        <h2>{{label}}</h2>
+    </div>
+    <section id="basics">
+        <div class="contact">
+            <div class="header">
+                <h2>Personal Info</h2>
             </div>
-            {{/if}} {{#if email}}
-            <div class="email">
-                <strong>Email</strong>
-                </br>
-                {{email}}
-                </br>
-                </br>
-            </div>
-            {{/if}} {{#if phone}}
-            <div class="phone">
-                <strong>Phone</strong>
-                </br>
-                {{phone}}
-                </br>
-                </br>
-            </div>
-            {{/if}} {{#if profiles.length}}
-            <section id="profiles">
-                {{#each profiles}}
-                <div class="item">
-                    {{#if network}}
-                    <strong class="network">
-                        {{network}}
-                    </strong>
-                    {{/if}} {{#if username}}
-                    {{#if url}}
-                    <a href={{url}}>
-                    {{/if}}
-                    <div class="username">
-                        {{username}}
+            <div class="info">
+                {{#if website}}
+                    <div class="website">
+                        <strong>Website</strong>
+                        </br>
+                        {{website}}
                         </br>
                         </br>
                     </div>
-                    {{#if url}}
-                    </a>
-                    {{/if}}
-                    {{/if}}
-                </div>
-                {{/each}}
-            </section>
-            {{/if}}
+                {{/if}}
+                {{#if email}}
+                    <div class="email">
+                        <strong>Email</strong>
+                        </br>
+                        {{email}}
+                        </br>
+                        </br>
+                    </div>
+                {{/if}}
+                {{#if phone}}
+                    <div class="phone">
+                        <strong>Phone</strong>
+                        </br>
+                        {{phone}}
+                        </br>
+                        </br>
+                    </div>
+                {{/if}}
+                {{#if profiles.length}}
+                    <section id="profiles">
+                        {{#each profiles}}
+                            <div class="item">
+                                {{#if network}}
+                                    <strong class="network">
+                                        {{network}}
+                                    </strong>
+                                {{/if}}
+                                {{#if username}}
+                                    {{#if url}}
+                                    <a href={{url}}>
+                                    {{/if}}
+                                    <div class="username">
+                                        {{username}}
+                                        </br>
+                                        </br>
+                                    </div>
+                                    {{#if url}}
+                                    </a>
+                                    {{/if}}
+                                {{/if}}
+                            </div>
+                        {{/each}}
+                    </section>
+                {{/if}}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 {{/resume.basics}}

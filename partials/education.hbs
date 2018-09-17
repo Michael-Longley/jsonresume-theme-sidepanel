@@ -1,45 +1,50 @@
 {{#if resume.education.length}}
-<section id="education">
-    <hr>
-    <h2>Education</h2>
-    <hr> {{#each resume.education}}
-    <div class="item">
-        <div class="date">
-            {{#if startDate}}
-            <span class="startDate">
-                {{startDate}} -
-            </span>
-            {{/if}}
-            <br> {{#if endDate}}
-            <span class="endDate">
-                {{endDate}}
-            </span>
-            {{else}}
-            <span class="endDate">
-                Present
-            </span>
-            {{/if}}
-        </div>
-        <div class="college">
-            {{#if institution}}
-            <div class="institution">
-                {{institution}}
+    <section id="education">
+        <hr>
+        <h2>Education</h2>
+        <hr> 
+        {{#each resume.education}}
+            <div class="item">
+                <div class="date">
+                    {{#if startDate}}
+                        <span class="startDate">
+                            {{startDate}} -
+                        </span>
+                        <br> 
+                        {{#if endDate}}
+                            <span class="endDate">
+                                {{endDate}}
+                            </span>
+                        {{else}}
+                            <span class="endDate">
+                                Present
+                            </span>
+                        {{/if}}
+                    {{/if}}
+                </div>
+                <div class="college">
+                    {{#if institution}}
+                        <div class="institution">
+                            {{institution}}
+                        </div>
+                    {{/if}}
+                    {{#if area}}
+                        <div class="area">
+                            {{area}}
+                        </div>
+                    {{/if}}
+                    {{#if studyType}}
+                        <div class="studyType">
+                            {{studyType}}
+                        </div>
+                    {{/if}}
+                    {{#if gpa}}
+                        <div class="gpa">
+                            GPA: {{gpa}}
+                        </div>
+                    {{/if}}
+                </div>
             </div>
-            {{/if}} {{#if area}}
-            <div class="area">
-                {{area}}
-            </div>
-            {{/if}} {{#if studyType}}
-            <div class="studyType">
-                {{studyType}}
-            </div>
-            {{/if}} {{#if gpa}}
-            <div class="gpa">
-                GPA: {{gpa}}
-            </div>
-            {{/if}}
-        </div>
-    </div>
-    {{/each}}
-</section>
+        {{/each}}
+    </section>
 {{/if}}
